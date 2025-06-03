@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base :: layout(~{::section})">
+<body>
+
+	<section>
+		<div class="container">
+            <p class="text-center fs-1 mt-3 fw-bold text-primary">Admin Dashboard</p>
+            <div class="row mt-4">
+
+                <!-- Add Products -->
+                <div class="col-md-4">
+                    <a href="/addproduct" class="text-decoration-none">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-box-open fa-2x text-success"></i>
+                                <p class="fs-5 mt-2 fw-bold text-warning">Add Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Manage Categories -->
+                <div class="col-md-4">
+                    <a href="/category" class="text-decoration-none">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-list fa-2x text-primary"></i>
+                                <p class="fs-5 mt-2 fw-bold text-warning">Category</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- View Products -->
+                <div class="col-md-4">
+                    <a href="/vewProduct" class="text-decoration-none">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-eye fa-2x text-info"></i>
+                                <p class="fs-5 mt-2 fw-bold text-warning">View Products</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Orders Management -->
+                <div class="col-md-4 mt-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-receipt fa-2x text-danger"></i>
+                                <p class="fs-5 mt-2 fw-bold text-warning">Orders</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Users Management -->
+                <div class="col-md-4 mt-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-user fa-2x text-dark"></i>
+                                <p class="fs-5 mt-2 fw-bold text-warning">User</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Add Admin -->
+                <div class="col-md-4 mt-4">
+                    <a href="#" class="text-decoration-none">
+                        <div class="card shadow-sm">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-user-shield fa-2x text-secondary"></i>
+                                <p class="fs-5 mt-2 fw-bold text-warning">Add Admin</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+ 
+	</section>
+
+
+</body>
+</html>

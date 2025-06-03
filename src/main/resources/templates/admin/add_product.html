@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="base :: layout(~{::section})">
+<body>
+<section>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="text-center mb-3">
+                            <i class="fa-solid fa-box-open fa-2x text-success"></i>
+                            <p class="fs-5 mt-2 fw-bold text-warning">Add Products</p>
+                        </div>
+                        <form enctype="multipart/form-data" method="post">
+                            <div class="mb-4 text-start">
+                                <label>Enter Title</label>
+                                <input type="text" name="title" class="form-control" />
+                            </div>
+
+                            <div class="mb-4 text-start">
+                                <label>Enter Description</label>
+                                <textarea name="subtitle" rows="4" class="form-control"></textarea>
+                            </div>
+
+                            <div class="mb-4 text-start">
+                                <label>Category</label>
+                                <select class="form-control" name="category">
+                                    <option>Select</option>
+                                    <option>Fashion</option>
+                                    <option>Electronics</option>
+                                    <option>Home & Kitchen</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4 text-start">
+                                <label>Enter Price</label>
+                                <input type="text" name="price" class="form-control" />
+                            </div>
+
+                            <div class="mb-4 text-start">
+                                <label>Stock</label>
+                                <input type="number" name="stock" class="form-control" min="0" />
+                            </div>
+
+                            <div class="mb-4 text-start">
+                                <label>Upload Image</label>
+                                <input type="file" name="productImage" class="form-control" />
+                            </div>
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-success">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
